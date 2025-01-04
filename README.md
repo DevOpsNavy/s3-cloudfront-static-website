@@ -16,7 +16,7 @@ This module provisions the infrasructure required for a static website hosted on
 
  - Domain Name
  -  [Route 53 Hosted zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-working-with.html) which is the DNS provider for the domain. [Making Amazon Route 53 the DNS service for an existing domain](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/MigratingDNS.html). Note: the hosted zone only needs to manage the DNS service, domain registration does not need to be migrated!
- - [A second aws porovider configured in us-east-1](https://www.terraform.io/language/providers/configuration) as CloudFront and SSL certificates are only available in us-east-1.
+ - [A second aws provider configured in us-east-1](https://www.terraform.io/language/providers/configuration) as CloudFront and SSL certificates are only available in us-east-1.
 
 For syncronisation of the website content with a local directory, the following is required:
  -  [AWS CLI](https://aws.amazon.com/cli/) installed locally - [installation instructions](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
